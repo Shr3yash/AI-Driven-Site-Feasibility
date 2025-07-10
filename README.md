@@ -70,4 +70,32 @@ It fills a gap by supporting proactive site selection at the study start-up phas
 
 ---
 
+# 🛠️ Team25 Hackathon – Compute & Oracle DB Setup Guide
+
+> A step-by-step guide to help new team members connect to the Oracle Autonomous Database from our compute instance using Python and the provided wallet.
+
+---
+
+## 📦 Prerequisites
+
+Before you start, make sure you have:
+
+- The full `team25` folder:
+  - `ssh-keys/id_rsa` and `id_rsa.pub`
+  - `summary.yaml`
+  - `DB_Hackathon.zip` (wallet)
+  - `DatabaseConfig.py`
+- Python 3.9+ on the compute instance
+- SCP and SSH access
+
+---
+
+## 1️⃣ SSH into the Compute Instance
+
+Make the private key secure:
+
+```bash
+chmod 600 team25/ssh-keys/id_rsa
+
+
 
