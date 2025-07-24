@@ -1,0 +1,49 @@
+---
+- # ====== Breadcrumb: Breadcrumb ==============================
+  id: 26820227662398153
+  identification: 
+    name: Breadcrumb
+
+  entries: 
+  - # ====== Entry: AI Driven Clinical Site Feasibility ==========
+    id: 26820475119398154
+    identification: 
+      name: AI Driven Clinical Site Feasibility
+      page-number: 1
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # AI Driven Clinical Site Feasibility
+
+  - # ====== Entry: Feasibility Assistant ========================
+    id: 27133837572557935
+    identification: 
+      name: Feasibility Assistant
+      page-number: 4
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+        page: 4 # Feasibility Assistant
+
+  - # ====== Entry: TestMihai ====================================
+    id: 29824876979888520
+    identification: 
+      name: TestMihai
+      page-number: 6
+
+    execution: 
+      sequence: 10
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:6:&APP_SESSION.::&DEBUG.:::'
+        page: 6 # TestMihai
+

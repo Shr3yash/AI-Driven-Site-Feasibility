@@ -1,0 +1,21 @@
+---
+- # ====== Authentication: Oracle APEX Accounts ================
+  id: 26819989760398149
+  identification: 
+    name: Oracle APEX Accounts
+
+  subscription: 
+    version-number: 45013279515933
+
+  settings: 
+    type: Oracle APEX Accounts
+
+  session-not-valid: 
+    redirect-to: Login Page
+
+  login-processing: 
+    switch-in-session: false
+
+  real-application-security: 
+    ras-mode: Disabled
+

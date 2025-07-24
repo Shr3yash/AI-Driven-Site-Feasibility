@@ -1,0 +1,513 @@
+---
+# ====== Page: AI Driven Clinical Site Feasibility v2 ========
+id: 10
+identification: 
+  name: AI Driven Clinical Site Feasibility v2
+  alias: AI-DRIVEN-CLINICAL-SITE-FEASIBILITY-V2
+  title: AI Driven Clinical Site Feasibility v2
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: Clinical Site Feasibility ===================
+  id: 59595580367026389
+  identification: 
+    name: Clinical Site Feasibility
+    type: Static Content
+
+  source: 
+    html-code: This application is used for clinical site feasibility
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Hero
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  image: 
+    file-url: '#APP_FILES#icons/app-icon-512.png'
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+page-items: 
+- # ====== Page Item: P10_OUTPUT ===============================
+  id: 62548595155079205
+  identification: 
+    name: P10_OUTPUT
+    type: Textarea
+
+  label: 
+    label: Output
+    alignment: Left
+
+  settings: 
+    resizable: true
+    auto-height: false
+    character-counter: false
+    trim-spaces: Leading and Trailing
+
+  layout: 
+    sequence: 60
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+    height: 5
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P10_INPUT_GENDER =========================
+  id: 62548701392079206
+  identification: 
+    name: P10_INPUT_GENDER
+    type: Text Field
+
+  label: 
+    label: Input Gender
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 10
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P10_INPUT_AGE ============================
+  id: 62548957289079208
+  identification: 
+    name: P10_INPUT_AGE
+    type: Text Field
+
+  label: 
+    label: Input Age
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 20
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P10_INPUT_ETHNICITY ======================
+  id: 62549060885079209
+  identification: 
+    name: P10_INPUT_ETHNICITY
+    type: Text Field
+
+  label: 
+    label: Input Ethnicity
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 30
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P10_INPUT_GEOGRAPHIC_REGION ==============
+  id: 62549116314079210
+  identification: 
+    name: P10_INPUT_GEOGRAPHIC_REGION
+    type: Text Field
+
+  label: 
+    label: Input Geographic Region
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 40
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+buttons: 
+- # ====== Button: GET_SITES_AND_CALL_COHERE ===================
+  id: 32762013976628142
+  identification: 
+    button-name: GET_SITES_AND_CALL_COHERE
+    label: Call Cohere and Get Sites v2
+
+  layout: 
+    sequence: 50
+    region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: true
+    template-options: 
+    - '#DEFAULT#'
+
+  behavior: 
+    action: Defined by Dynamic Action
+    execute-validations: true
+
+dynamic-actions: 
+- # ====== Dynamic Action: GetSites ============================
+  id: 32764727608628196
+  identification: 
+    name: GetSites
+
+  execution: 
+    sequence: 10
+    event-scope: Static
+    type: Immediate
+
+  when: 
+    event: Click
+    selection-type: Button
+    button: GET_SITES_AND_CALL_COHERE # 32762013976628142
+
+  actions: 
+  - # ====== Action: GET_SITES_AND_CALL_COHERE ===================
+    id: 32765263621628200
+    identification: 
+      name: GET_SITES_AND_CALL_COHERE
+      action: Execute Server-side Code
+
+    settings: 
+      language: PE.PROPERTY.SOURCE_SNIPPET_LANG.LOV.PLSQL.D
+      pl/sql-code: |
+        declare l_output VARCHAR2(200);
+        BEGIN
+        l_output := GENERATE_RESPONSE_SIMILARITY_SEARCH(:P10_INPUT_GENDER, :P10_INPUT_AGE, :P10_INPUT_ETHNICITY, :P10_INPUT_GEOGRAPHIC_REGION);
+        
+        :P10_OUTPUT := l_output;
+        
+        END;
+      items-to-submit: 
+      - P10_INPUT_GENDER
+      - P10_INPUT_AGE
+      - P10_INPUT_ETHNICITY
+      - P10_INPUT_GEOGRAPHIC_REGION
+      items-to-return: 
+      - P10_OUTPUT
+      suppress-change-event: false
+
+    execution: 
+      sequence: 10
+      event: GetSites # 32764727608628196
+      fire-when-event-result-is: True
+      fire-on-initialization: false
+      stop-execution-on-error: true
+      wait-for-result: true
+
+processes: 
+- # ====== Process: GET_SITES_AND_CALL_COHERE ==================
+  id: 32764324047628194
+  identification: 
+    name: GET_SITES_AND_CALL_COHERE
+    type: Execute Code
+    execution-chain: None
+
+  source: 
+    location: Local Database
+    language: PL/SQL
+    pl/sql-code: |
+      DECLARE
+        l_user_vec VECTOR := get_embedding(:P10_INPUT);
+        l_site_json CLOB;
+      BEGIN
+        SELECT JSON_ARRAYAGG(
+                 JSON_OBJECT(
+                   'site_id'      VALUE site_id,
+                   'satisfaction' VALUE satisfaction
+                 )
+               )
+        INTO l_site_json
+        FROM (
+          WITH uv AS (SELECT l_user_vec AS vec FROM DUAL)
+          SELECT
+            pd.site_id,
+            pd.satisfaction,
+            VECTOR_DISTANCE(
+              pd.PATIENT_DEMOGRAPHICS_EMBEDDING2,
+              uv.vec
+            ) AS dist
+          FROM   PATIENT_DEMOGRAPHICS pd
+          CROSS JOIN uv
+          WHERE  pd.study            = 'Oncology'
+            AND  pd.country          = 'India'
+            AND (pd.age             = :P10_AGE        OR :P10_AGE        IS NULL)
+            AND (pd.gender          = :P10_GENDER     OR :P10_GENDER     IS NULL)
+            AND (pd.ethnicity       = :P10_ETHNICITY  OR :P10_ETHNICITY  IS NULL)
+            AND (pd.geographic_region = :P10_REGION   OR :P10_REGION     IS NULL)
+          ORDER BY dist
+        )
+        WHERE ROWNUM <= 5;
+      
+        :APEX$RETURN := APEX_WEB_SERVICE.MAKE_REST_REQUEST(
+          p_url         => 'https://api.cohere.ai/generate',
+          p_http_method => 'POST',
+          p_parm_name   => APEX_UTIL.STRING_TO_TABLE(
+                             'Content-Type','Authorization'
+                           ),
+          p_parm_value  => APEX_UTIL.STRING_TO_TABLE(
+                             'application/json',
+                             'Bearer ' || :P10_COHERE_API_KEY
+                           ),
+          p_body        => JSON_OBJECT(
+                             'model'     VALUE 'command',
+                             'prompt'    VALUE :P10_INPUT
+                                             || CHR(10)
+                                             || 'Top Sites: ' || l_site_json,
+                             'max_tokens' VALUE 200
+                           )
+        );
+      END;
+      
+
+  execution: 
+    sequence: 10
+    point: Ajax Callback
+    run-process: Once Per Page Visit (default)
+

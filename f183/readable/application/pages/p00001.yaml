@@ -1,0 +1,572 @@
+---
+# ====== Page: AI Driven Clinical Site Feasibility ===========
+id: 1
+identification: 
+  name: AI Driven Clinical Site Feasibility
+  alias: HOME
+  title: Clinical Site Feasibility
+
+appearance: 
+  page-mode: Normal
+  page-template: Theme Default
+  template-options: 
+  - '#DEFAULT#'
+
+navigation-menu: 
+  override-user-interface-level: false
+
+navigation: 
+  cursor-focus: Do not focus cursor
+  warn-on-unsaved-changes: true
+
+security: 
+  authentication: Page Requires Authentication
+  deep-linking: Application Default
+  page-access-protection: Arguments Must Have Checksum
+  form-auto-complete: Off
+  browser-cache: Application Default
+
+session-management: 
+  rejoin-sessions: Application Default
+
+advanced: 
+  enable-duplicate-page-submissions: Yes - Enable page to be re-posted
+  reload-on-submit: Only for Success
+
+server-cache: 
+  caching: Disabled
+
+regions: 
+- # ====== Region: Clinical Site Feasibility ===================
+  id: 26833820587398284
+  identification: 
+    name: Clinical Site Feasibility
+    type: Static Content
+
+  source: 
+    html-code: This application is used for clinical site feasibility
+
+  layout: 
+    sequence: 10
+    parent-region: No Parent
+    slot: REGION_POSITION_01
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+
+  appearance: 
+    template: Hero
+    template-options: 
+    - '#DEFAULT#'
+    render-components: Above Content
+
+  accessibility: 
+    use-landmark: true
+    landmark-type: Template Default
+
+  image: 
+    file-url: '#APP_FILES#icons/app-icon-512.png'
+
+  advanced: 
+    region-display-selector: false
+    exclude-title-from-translation: false
+
+  customization: 
+    customizable: Not Customizable By End Users
+
+  attributes: 
+    settings: 
+      output-as: HTML
+      expand-shortcuts: false
+
+page-items: 
+- # ====== Page Item: P1_OUTPUT ================================
+  id: 29785714095451023
+  identification: 
+    name: P1_OUTPUT
+    type: Textarea
+
+  label: 
+    label: Output
+    alignment: Left
+
+  settings: 
+    resizable: true
+    auto-height: false
+    character-counter: false
+    trim-spaces: Leading and Trailing
+
+  layout: 
+    sequence: 60
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+    height: 5
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    data-type: VARCHAR2
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P1_INPUT_GENDER ==========================
+  id: 29785820332451024
+  identification: 
+    name: P1_INPUT_GENDER
+    type: Text Field
+
+  label: 
+    label: Input Gender
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 10
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P1_INPUT_AGE =============================
+  id: 29786076229451026
+  identification: 
+    name: P1_INPUT_AGE
+    type: Text Field
+
+  label: 
+    label: Input Age
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 20
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P1_INPUT_ETHNICITY =======================
+  id: 29786179825451027
+  identification: 
+    name: P1_INPUT_ETHNICITY
+    type: Text Field
+
+  label: 
+    label: Input Ethnicity
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 30
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+- # ====== Page Item: P1_INPUT_GEOGRAPHIC_REGION ===============
+  id: 29786235254451028
+  identification: 
+    name: P1_INPUT_GEOGRAPHIC_REGION
+    type: Text Field
+
+  label: 
+    label: Input Geographic Region
+    alignment: Left
+
+  settings: 
+    subtype: Text
+    trim-spaces: Leading and Trailing
+    text-case: NO CHANGE
+    submit-when-enter-pressed: false
+    disabled: false
+
+  layout: 
+    sequence: 40
+    region: No Parent
+    slot: BODY
+    alignment: Left
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    label-column-span: Page Template Default
+
+  appearance: 
+    template: Optional - Floating
+    template-options: 
+    - '#DEFAULT#'
+    width: 30
+
+  validation: 
+    value-required: false
+
+  advanced: 
+    warn-on-unsaved-changes: Page Default
+
+  source: 
+    type: Null
+    used: Only when current value in session state is null
+
+  session-state: 
+    storage: Per Session (Persistent)
+
+  quick-picks: 
+    show-quick-picks: false
+
+  security: 
+    session-state-protection: Unrestricted
+    store-value-encrypted-in-session-state: true
+    restricted-characters: All characters can be saved.
+
+buttons: 
+- # ====== Button: GET_SITES_AND_CALL_COHERE ===================
+  id: 29783705251451003
+  identification: 
+    button-name: GET_SITES_AND_CALL_COHERE
+    label: Call Cohere and Get Sites
+
+  layout: 
+    sequence: 50
+    region: No Parent
+    slot: BODY
+    start-new-layout: false
+    start-new-row: true
+    column: Automatic
+    new-column: true
+    column-span: Automatic
+    alignment: Left center
+
+  appearance: 
+    button-template: Text
+    hot: true
+    template-options: 
+    - '#DEFAULT#'
+
+  behavior: 
+    action: Defined by Dynamic Action
+    execute-validations: true
+
+dynamic-actions: 
+- # ====== Dynamic Action: GetSites ============================
+  id: 29783842201451004
+  identification: 
+    name: GetSites
+
+  execution: 
+    sequence: 10
+    event-scope: Static
+    type: Immediate
+
+  when: 
+    event: Click
+    selection-type: Button
+    button: GET_SITES_AND_CALL_COHERE # 29783705251451003
+
+  actions: 
+  - # ====== Action: GET_SITES_AND_CALL_COHERE ===================
+    id: 29785917156451025
+    identification: 
+      name: GET_SITES_AND_CALL_COHERE
+      action: Execute Server-side Code
+
+    settings: 
+      language: PE.PROPERTY.SOURCE_SNIPPET_LANG.LOV.PLSQL.D
+      pl/sql-code: |
+        DECLARE
+          -- 1) Normalize inputs
+          l_gender    VARCHAR2(50)  := NULLIF(TRIM(:P1_INPUT_GENDER), '');
+          l_age_txt   VARCHAR2(20)  := NULLIF(TRIM(:P1_INPUT_AGE),      '');
+          l_age       NUMBER        := CASE WHEN l_age_txt IS NOT NULL THEN TO_NUMBER(l_age_txt) END;
+          l_ethnicity VARCHAR2(100) := NULLIF(TRIM(:P1_INPUT_ETHNICITY), '');
+          l_region    VARCHAR2(255) := NULLIF(TRIM(:P1_INPUT_GEOGRAPHIC_REGION), '');
+        
+          -- 2) Embed the demographics text
+          l_demo_text CLOB := 
+               'Gender:'    || NVL(l_gender,'ANY')
+            || ' | Age:'      || NVL(TO_CHAR(l_age),'ANY')
+            || ' | Ethnicity:'|| NVL(l_ethnicity,'ANY')
+            || ' | Region:'   || NVL(l_region,'ANY');
+          l_user_vec VECTOR := get_embedding(l_demo_text);
+        
+          -- 3) Build JSON array of top‑5 sites with averaged recruit_rate
+          l_site_json CLOB;
+        BEGIN
+          SELECT JSON_ARRAYAGG(
+                   JSON_OBJECT(
+                     'site_id'      VALUE t.site_id,
+                     'recruit_rate' VALUE s.avg_rate
+                   )
+                 )
+            INTO l_site_json
+            FROM (
+              -- pick the 5 nearest unique sites
+              SELECT site_id
+              FROM (
+                SELECT
+                  pd.site_id                                   AS site_id,
+                  MIN(
+                    VECTOR_DISTANCE(
+                      pd.PATIENT_DEMOGRAPHICS_EMBEDDING2,
+                      l_user_vec
+                    )
+                  )                                            AS dist
+                FROM TEAM25.PATIENT_DEMOGRAPHICS pd
+                WHERE (pd.gender            = l_gender    OR l_gender    IS NULL)
+                  AND (pd.age               = l_age       OR l_age       IS NULL)
+                  AND (pd.ethnicity         = l_ethnicity OR l_ethnicity IS NULL)
+                  AND (pd.geographic_region = l_region    OR l_region    IS NULL)
+                GROUP BY pd.site_id
+                ORDER BY dist
+              )
+              WHERE ROWNUM <= 5
+            ) t
+            JOIN (
+              -- average the performance rows per site
+              SELECT site_id, AVG(avg_recruitment_rate) AS avg_rate
+              FROM TEAM25.SITE_HISTORICAL_PERFORMANCE
+              GROUP BY site_id
+            ) s
+              ON s.site_id = t.site_id;
+        
+          -- 4) Return the JSON (or empty array if none)
+          :P1_OUTPUT := NVL(l_site_json, '[]');
+        
+        EXCEPTION
+          WHEN VALUE_ERROR THEN
+            :P1_OUTPUT := 'Invalid age format; please enter a number for age.';
+          WHEN OTHERS THEN
+            :P1_OUTPUT := 'Error: ' || SUBSTR(SQLERRM,1,2000);
+        END;
+        
+      items-to-submit: 
+      - P1_INPUT_GENDER
+      - P1_INPUT_AGE
+      - P1_INPUT_ETHNICITY
+      - P1_INPUT_GEOGRAPHIC_REGION
+      items-to-return: 
+      - P1_OUTPUT
+      suppress-change-event: false
+
+    execution: 
+      sequence: 10
+      event: GetSites # 29783842201451004
+      fire-when-event-result-is: True
+      fire-on-initialization: false
+      stop-execution-on-error: true
+      wait-for-result: true
+
+processes: 
+- # ====== Process: GET_SITES_AND_CALL_COHERE ==================
+  id: 27135744942614512
+  identification: 
+    name: GET_SITES_AND_CALL_COHERE
+    type: Execute Code
+    execution-chain: None
+
+  source: 
+    location: Local Database
+    language: PL/SQL
+    pl/sql-code: |
+      DECLARE
+        l_user_vec VECTOR := get_embedding(:P1_INPUT);
+        l_site_json CLOB;
+      BEGIN
+        SELECT JSON_ARRAYAGG(
+                 JSON_OBJECT(
+                   'site_id'      VALUE site_id,
+                   'satisfaction' VALUE satisfaction
+                 )
+               )
+        INTO l_site_json
+        FROM (
+          WITH uv AS (SELECT l_user_vec AS vec FROM DUAL)
+          SELECT
+            pd.site_id,
+            pd.satisfaction,
+            VECTOR_DISTANCE(
+              pd.PATIENT_DEMOGRAPHICS_EMBEDDING2,
+              uv.vec
+            ) AS dist
+          FROM   PATIENT_DEMOGRAPHICS pd
+          CROSS JOIN uv
+          WHERE  pd.study            = 'Oncology'
+            AND  pd.country          = 'India'
+            AND (pd.age             = :P1_AGE        OR :P1_AGE        IS NULL)
+            AND (pd.gender          = :P1_GENDER     OR :P1_GENDER     IS NULL)
+            AND (pd.ethnicity       = :P1_ETHNICITY  OR :P1_ETHNICITY  IS NULL)
+            AND (pd.geographic_region = :P1_REGION   OR :P1_REGION     IS NULL)
+          ORDER BY dist
+        )
+        WHERE ROWNUM <= 5;
+      
+        :APEX$RETURN := APEX_WEB_SERVICE.MAKE_REST_REQUEST(
+          p_url         => 'https://api.cohere.ai/generate',
+          p_http_method => 'POST',
+          p_parm_name   => APEX_UTIL.STRING_TO_TABLE(
+                             'Content-Type','Authorization'
+                           ),
+          p_parm_value  => APEX_UTIL.STRING_TO_TABLE(
+                             'application/json',
+                             'Bearer ' || :P1_COHERE_API_KEY
+                           ),
+          p_body        => JSON_OBJECT(
+                             'model'     VALUE 'command',
+                             'prompt'    VALUE :P1_INPUT
+                                             || CHR(10)
+                                             || 'Top Sites: ' || l_site_json,
+                             'max_tokens' VALUE 200
+                           )
+        );
+      END;
+      
+
+  execution: 
+    sequence: 10
+    point: Ajax Callback
+    run-process: Once Per Page Visit (default)
+

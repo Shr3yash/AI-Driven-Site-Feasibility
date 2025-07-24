@@ -1,0 +1,332 @@
+---
+- # ====== List: Navigation Menu ===============================
+  id: 26820704504398158
+  identification: 
+    name: Navigation Menu
+
+  subscription: 
+    version-number: 45063276603467
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: AI Driven Clinical Site Feasibility ==========
+    id: 26832971535398275
+    label: 
+      label: AI Driven Clinical Site Feasibility
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # AI Driven Clinical Site Feasibility
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: AI Driven Cinical Site Feasibility ===========
+    id: 26844393653427211
+    label: 
+      label: AI Driven Cinical Site Feasibility
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 20
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 2
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
+        page: 2 # AI Driven Cinical Site Feasibility
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: Feasibility Assistant ========================
+    id: 27132985269557919
+    label: 
+      label: Feasibility Assistant
+
+    icon: 
+      image/icon-css-classes: fa-hospital-o
+
+    layout: 
+      sequence: 30
+      parent-entry: AI Driven Clinical Site Feasibility # 26832971535398275
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 4
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+        page: 4 # Feasibility Assistant
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: TestMihai ====================================
+    id: 29823997961888502
+    label: 
+      label: TestMihai
+
+    icon: 
+      image/icon-css-classes: fa-table-pointer
+
+    layout: 
+      sequence: 40
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 6
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:6:&APP_SESSION.::&DEBUG.:::'
+        page: 6 # TestMihai
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+  - # ====== Entry: TestUI =======================================
+    id: 30311867276096891
+    label: 
+      label: TestUI
+
+    icon: 
+      image/icon-css-classes: fa-file-o
+
+    layout: 
+      sequence: 50
+
+    is-current: 
+      type: Pages
+      pages: 
+      - 8
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:8:&APP_SESSION.::&DEBUG.:::'
+        page: 8 # TestUI
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+- # ====== List: Navigation Bar ================================
+  id: 26821929031398193
+  identification: 
+    name: Navigation Bar
+
+  subscription: 
+    version-number: 45013279521946
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: Install App ==================================
+    id: 26834452175398319
+    label: 
+      label: Install App
+
+    icon: 
+      image/icon-css-classes: fa-cloud-download
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Never
+
+    link: 
+      target: '#action$a-pwa-install'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: a-pwaInstall
+
+  - # ====== Entry: &APP_USER. ===================================
+    id: 26834775125398321
+    label: 
+      label: '&APP_USER.'
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 20
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '#'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: has-username
+
+  - # ====== Entry: --- ==========================================
+    id: 26835257538398323
+    label: 
+      label: '---'
+
+    layout: 
+      sequence: 30
+      parent-entry: '&APP_USER.' # 26834775125398321
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: separator
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Sign Out =====================================
+    id: 26835679297398324
+    label: 
+      label: Sign Out
+
+    icon: 
+      image/icon-css-classes: fa-sign-out
+
+    layout: 
+      sequence: 40
+      parent-entry: '&APP_USER.' # 26834775125398321
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '&LOGOUT_URL.'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Settings =====================================
+    id: 26842823897398370
+    label: 
+      label: Settings
+
+    icon: 
+      image/icon-css-classes: fa-gear
+
+    layout: 
+      sequence: 1
+      parent-entry: '&APP_USER.' # 26834775125398321
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:20000:&APP_SESSION.::&DEBUG.:::'
+        page: 20000 # Settings
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    configuration: 
+      build-option: 'Feature: User Settings' # 26836479857398332
+
+- # ====== List: User Settings =================================
+  id: 26840064911398352
+  identification: 
+    name: User Settings
+
+  subscription: 
+    version-number: 45013279521556
+
+  source: 
+    type: Static Values
+
+  configuration: 
+    build-option: 'Feature: User Settings' # 26836479857398332
+
+  entries: 
+  - # ====== Entry: Push Notifications ===========================
+    id: 26840451950398354
+    label: 
+      label: Push Notifications
+
+    icon: 
+      image/icon-css-classes: fa-bell-o
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:20010:&APP_SESSION.::&DEBUG.:::'
+        page: 20010 # Push Notifications
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      1.: Configure whether you want to receive push notifications on this device.
+      2.: <span class="a-pwaPush--state"></span>
+
+    configuration: 
+      build-option: 'Feature: Push Notifications' # 26836159916398330
+
