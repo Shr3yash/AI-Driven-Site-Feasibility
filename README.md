@@ -70,7 +70,7 @@ It fills a gap by supporting proactive site selection at the study start-up phas
 
 ---
 
-# 🛠️ Team25 Hackathon – Compute & Oracle DB Setup Guide
+# Compute & Oracle DB Setup Guide
 
 > A step-by-step guide to help new team members connect to the Oracle Autonomous Database from our compute instance using Python and the provided wallet.
 
